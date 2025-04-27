@@ -11,14 +11,17 @@ export default function Layout({ children }: LayoutProps) {
         {children}
       </main>
       <footer className="mt-12 text-sm text-gray-500 flex gap-4">
-        <a href="mailto:tony.dyleuth@gmail.com" className="hover:underline">
+        <a
+          href="mailto:tony.dyleuth@gmail.com"
+          className="text-gray-300 hover:text-gray-100 hover:underline transition duration-200 ease-in-out"
+        >
           Email
         </a>
         <a
           href="https://github.com/tdyleuth"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:underline"
+          className="text-gray-300 hover:text-gray-100 hover:underline transition duration-200 ease-in-out"
         >
           GitHub
         </a>
@@ -26,7 +29,7 @@ export default function Layout({ children }: LayoutProps) {
           href="https://www.linkedin.com/in/tdyleuth/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:underline"
+          className="text-gray-300 hover:text-gray-100 hover:underline transition duration-200 ease-in-out"
         >
           LinkedIn
         </a>
@@ -34,7 +37,7 @@ export default function Layout({ children }: LayoutProps) {
           href="https://drive.google.com/file/d/1Z7H87Ycc5Nq3pa3nW3-LO4-djEDL7BAv/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:underline"
+          className="text-gray-300 hover:text-gray-100 hover:underline transition duration-200 ease-in-out"
         >
           Resume
         </a>
