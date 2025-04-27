@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { ReactNode } from "react";
 
 interface LayoutProps {
@@ -7,6 +8,11 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <div className="flex flex-col min-h-screen w-full items-center justify-center p-8">
+      <Head>
+        <title>Tony Dyleuth | Software Engineer</title>
+        <meta name="description" content="Professional Software Engineer" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <main className="flex flex-col items-start w-full max-w-2xl">
         {children}
       </main>
