@@ -1,13 +1,26 @@
+import { Typewriter } from "react-simple-typewriter";
 import Layout from "../components/Layout";
 
 export default function Home() {
+  const fullBio =
+    "Hi I'm Tony :) I'm a Professional Software Engineer based in Los Angeles, California. I'm passionate about creating simple, beautiful web experiences.";
   return (
     <Layout>
       <h1 className="text-2xl font-semibold mb-2">Tony Dyleuth</h1>
-      <p className="text-gray-400 mb-8">
-        Professional Software Engineer based in Los Angeles, California.
-        I&apos;m passionate about creating simple, beautiful web experiences.
-      </p>
+      <div className="relative mb-8 h-24 text-gray-400">
+        <p className="invisible">{fullBio}</p>
+        <div className="absolute top-0 left-0">
+          <Typewriter
+            words={[fullBio]}
+            loop={1}
+            cursor
+            cursorStyle="_"
+            typeSpeed={45}
+            deleteSpeed={0}
+            delaySpeed={1000}
+          />
+        </div>
+      </div>
 
       <section className="mb-4">
         <h3 className="text-lg mb-2">Personal Projects</h3>
