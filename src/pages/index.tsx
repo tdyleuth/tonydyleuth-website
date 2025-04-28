@@ -24,7 +24,7 @@ export default function Home() {
 
       <section className="mb-4">
         <h3 className="text-lg mb-2">Personal Projects</h3>
-        <ul>
+        <ul className="list-disc list-inside">
           <li>
             <a
               href="https://github.com/tdyleuth/video-library"
