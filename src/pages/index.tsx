@@ -22,7 +22,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="mb-4">
+      {/* <section className="mb-4">
         <h3 className="text-lg mb-2">Personal Projects</h3>
         <ul className="list-disc list-inside">
           <li>
@@ -66,7 +66,7 @@ export default function Home() {
             </a>
           </li>
         </ul>
-      </section>
+      </section> */}
     </Layout>
   );
 }
